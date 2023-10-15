@@ -1,0 +1,2 @@
+export type JustifyContent = 'normal' | 'start' | 'center' | 'end' | 'left' | 'right' | 'spaceBetween' | 'spaceAround' | 'spaceEvenly' | 'stretch';
+export type AlignItems = 'normal' | 'stretch' | 'start' | 'center' | 'end';

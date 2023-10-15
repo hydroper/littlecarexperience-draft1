@@ -1,0 +1,19 @@
+:root {
+    --card-background: #555;
+    --font-color: #eee;
+    --dark-font-color: #222;
+    --primary-font: 'Source Sans 3', Arial, sans-serif;
+}
+
+.card {
+    background: var(--card-background);
+}
+
+.label {
+    color: var(--font-color);
+    font-family: var(--primary-font);
+}
+
+.dark-label {
+    color: var(--dark-font-color);
+}
