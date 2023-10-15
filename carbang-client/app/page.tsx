@@ -17,23 +17,25 @@ const movingDirections = {
   down: false,
 };
 
-window.addEventListener('keydown', evt => {
+Input.onInputPressed.listen(() => {
   const { level } = Level;
   movingDirections.left ||= Input.isPressed("moveLeft");
   movingDirections.right ||= Input.isPressed("moveRight");
   movingDirections.up ||= Input.isPressed("moveUp");
   movingDirections.down ||= Input.isPressed("moveDown");
+  console.log(movingDirections);
   if (level.connected) {
     level.socket!.sendMovingDirections(movingDirections);
   }
 });
 
-window.addEventListener('keyup', evt => {
+Input.onInputUp.listen(() => {
   const { level } = Level;
-  movingDirections.left &&= !Input.isPressed("moveLeft");
-  movingDirections.right &&= !Input.isPressed("moveRight");
-  movingDirections.up &&= !Input.isPressed("moveUp");
-  movingDirections.down &&= !Input.isPressed("moveDown");
+  movingDirections.left &&= Input.isPressed("moveLeft");
+  movingDirections.right &&= Input.isPressed("moveRight");
+  movingDirections.up &&= Input.isPressed("moveUp");
+  movingDirections.down &&= Input.isPressed("moveDown");
+  console.log(movingDirections);
   if (level.connected) {
     level.socket!.sendMovingDirections(movingDirections);
   }
