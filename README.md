@@ -12,6 +12,7 @@ There are certain troubles to handle with this technology combination:
 
 * WebSocket — something strange to do with the peer dictionary is going on in the Godot Engine backend.
 * The Two.js rendering library's API is not rich in options.
+* The Godot Engine's physics simulation is not coherent to the goal physics.
 
 Alternative technologies considered:
 
