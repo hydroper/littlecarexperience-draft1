@@ -8,10 +8,15 @@ A failure by @hydroper on trying to develop a massive multiplayer game with the 
 * Backend
   * Godot Engine
 
-There are several troubles to handle with this technology combination:
+There are certain troubles to handle with this technology combination:
 
-* WebSocket bugs; something strange to do with the peer dictionary is going on in the Godot Engine backend.
+* WebSocket — something strange to do with the peer dictionary is going on in the Godot Engine backend.
 * The Two.js rendering library's API is not rich in options.
+
+Alternative technologies considered:
+
+* Front-end
+  * Pixi.js rendering library — it had a bug that cutted the player off the stage, thus discarded.
 
 ## License
 
