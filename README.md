@@ -1,4 +1,4 @@
-# CarBang with Next.js + Two.js + Godot Engine
+# Little Car Experience (draft 1)
 
 A failure by @hydroper on trying to develop a massive multiplayer game with the following technologies:
 
