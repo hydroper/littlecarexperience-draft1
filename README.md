@@ -1,6 +1,6 @@
 # Little Car Experience (draft 1)
 
-A failure by @hydroper on trying to develop a massive multiplayer game with the following technologies:
+A failure by @hydroper on trying to develop a massively multiplayer game (based on the single-player SharkBite Bay Adventure game) with the following technologies:
 
 * Front-end
   * Next.js
